@@ -1,5 +1,7 @@
 package controle;
 
+import java.text.DecimalFormat;
+
 public class ConverterMoedas {
 	
 	//ordem dos valores de cotação
@@ -21,274 +23,276 @@ public class ConverterMoedas {
 	double[] cotacaoPesoArgentino = {0.28, 0.0055, 0.0051, 0.0045, 1, 4.53 };
 	double[] cotacaoPesoChileno = {0.0062, 0.0012, 0.0011, 0.00100, 0.22, 1};
 	
+	DecimalFormat formato = new DecimalFormat("###.##");
+	
 	
 	//real x dolar
 	
-	public double reaisParaDolar(double valorReal) {
+	public String reaisParaDolar(double valorReal) {
 		double resultado;
 		resultado = valorReal / cotacaoReal[1];
-		System.out.println(resultado);
-		return resultado;
+		
+		return formato.format(resultado);
 	}
 	
 	//dolar x real 
 	
-	public double dolarParaReais(double valorDolar) {
+	public String dolarParaReais(double valorDolar) {
 		double resultado;
 		resultado = valorDolar * cotacaoDolar[0];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// real X euro
 	
-	public double reaisParaEuro(double valorReal) {
+	public String reaisParaEuro(double valorReal) {
 		double resultado;
 		resultado = valorReal * cotacaoReal[2];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// euro x real
 	
-	public double euroParaReais(double valorEuro) {
+	public String euroParaReais(double valorEuro) {
 		double resultado;
 		resultado = valorEuro * cotacaoEuro[0];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// real x libra esterlina 
 	
-	public double reaisParaLibraEsterlina(double valorReal) {
+	public String reaisParaLibraEsterlina(double valorReal) {
 		double resultado;
 		resultado = valorReal * cotacaoReal[3];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	//libra esterlina x real 
 	
-	public double libraEsterlinaParaReais(double valorLibra) {
+	public String libraEsterlinaParaReais(double valorLibra) {
 		double resultado;
 		resultado = valorLibra * cotacaoLibraEsrterlina[0];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// real x peso argentino 
 	
-	public double reaisParaPesoArgentino (double valorReal) {
+	public String reaisParaPesoArgentino (double valorReal) {
 		double resultado;
 		resultado = valorReal * cotacaoReal[4];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso argentino x real
 	
-	public double pesoArgentinoParaReais(double valorPesoArgentino) {
+	public String pesoArgentinoParaReais(double valorPesoArgentino) {
 		double resultado;
 		resultado = valorPesoArgentino * cotacaoPesoArgentino[0];
 	
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// real x peso chileno 
 	
-	public double reaisParaPesoChileno(double valorReal) {
+	public String reaisParaPesoChileno(double valorReal) {
 		double resultado;
 		resultado = valorReal * cotacaoReal[5];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso chileno x real
 	
-	public double pesoChilenoParaReais(double valorPesoChileno) {
+	public String pesoChilenoParaReais(double valorPesoChileno) {
 		double resultado;
 		resultado = valorPesoChileno * cotacaoPesoChileno[0];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// dolar x euro 
 	
-	public double dolarParaEuro(double valorDolar) {
+	public String dolarParaEuro(double valorDolar) {
 		double resultado;
 		resultado = valorDolar * cotacaoDolar[2];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// euro x dolar
 	
-	public double euroParaDolar(double valorEuro) {
+	public String euroParaDolar(double valorEuro) {
 		double resultado;
 		resultado = valorEuro * cotacaoEuro[1];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// dolar x libra esterlina
 	
-	public double dolarParaLibraEsterlina(double valorDolar) {
+	public String dolarParaLibraEsterlina(double valorDolar) {
 		double resultado;
 		resultado = valorDolar * cotacaoDolar[3];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// libra estarlina x dolar 
 	
-	public double libraEsterlinaParaDolar(double valorLibraEsterlina) {
+	public String libraEsterlinaParaDolar(double valorLibraEsterlina) {
 		double resultado;
 		resultado = valorLibraEsterlina * cotacaoLibraEsrterlina[1];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	// dolar x peso argentino 
 	
-	public double dolarParaPesoArgentino(double valorDolar) {
+	public String dolarParaPesoArgentino(double valorDolar) {
 		double resultado;
 		resultado = valorDolar * cotacaoDolar[4];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso argentino x dolar 
 	
-	public double pesoArgentinoParaDolar(double valorPesoArgentino) {
+	public String pesoArgentinoParaDolar(double valorPesoArgentino) {
 		double resultado;
 		resultado = valorPesoArgentino * cotacaoPesoArgentino[1];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// dolar x peso chileno 
 	
-	public double dolarParaPesoChileno(double valorDolar) {
+	public String dolarParaPesoChileno(double valorDolar) {
 		double resultado;
 		resultado = valorDolar * cotacaoDolar[5];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso chileno x dolar 
 	
-	public double pesoChilenoParaDolar(double valorPesoChileno) {
+	public String pesoChilenoParaDolar(double valorPesoChileno) {
 		double resultado;
 		resultado = valorPesoChileno * cotacaoPesoChileno[1];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// euro x libra esterlina 
 	
-	public double euroParaLibraEsterlina(double valorEuro) {
+	public String euroParaLibraEsterlina(double valorEuro) {
 		double resultado;
 		resultado = valorEuro * cotacaoEuro[3];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// libra esterlina x euro 
 	
-	public double libraEsterlinaParaEuro(double valorLibraEsterlina) {
+	public String libraEsterlinaParaEuro(double valorLibraEsterlina) {
 		double resultado;
 		resultado = valorLibraEsterlina * cotacaoLibraEsrterlina[2];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// euro x peso argentino 
 	
-	public double euroParaPesoArgentino(double valorEuro) {
+	public String euroParaPesoArgentino(double valorEuro) {
 		double resultado;
 		resultado = valorEuro * cotacaoEuro[4];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso argentino x euro
 	
-	public double pesoArgentinoParaEuro(double valorPesoArgentino) {
+	public String pesoArgentinoParaEuro(double valorPesoArgentino) {
 		double resultado;
 		resultado = valorPesoArgentino * cotacaoPesoArgentino[2];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// euro x peso chileno 
 	
-	public double euroParaPesoChileno(double valorEuro) {
+	public String euroParaPesoChileno(double valorEuro) {
 		double resultado;
 		resultado = valorEuro * cotacaoEuro[5];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso chileno x euro 
 	
-	public double pesoChilenoParaEuro(double valorPesoChileno) {
+	public String pesoChilenoParaEuro(double valorPesoChileno) {
 		double resultado;
 		resultado = valorPesoChileno * cotacaoPesoChileno[2];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// libra esterlina x peso argentino 
 	
-	public double libraEsterlinaParaPesoArgentino(double valorLibraEsterlina) {
+	public String libraEsterlinaParaPesoArgentino(double valorLibraEsterlina) {
 		double resultado;
 		resultado = valorLibraEsterlina * cotacaoLibraEsrterlina[4];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso argentino x libra estelina
 	
-	public double pesoArgentinoParaLibraEsterlina(double valorPesoArgentino) {
+	public String pesoArgentinoParaLibraEsterlina(double valorPesoArgentino) {
 		double resultado;
 		resultado = valorPesoArgentino * cotacaoPesoArgentino[3];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// libra esterlina x peso chileno 
 	
-	public double libraEsterlinaParaPesoChileno(double valorLibraEsterlina) {
+	public String libraEsterlinaParaPesoChileno(double valorLibraEsterlina) {
 		double resultado;
 		resultado = valorLibraEsterlina * cotacaoLibraEsrterlina[5];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso chileno x libra esterlina
 	
-	public double pesoChilenoParaLibraEsterlina(double valorPesoChileno) {
+	public String pesoChilenoParaLibraEsterlina(double valorPesoChileno) {
 		double resultado;
 		resultado = valorPesoChileno * cotacaoPesoChileno[3];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	//peso argentino x peso chileno
 	
-	public double pesoArgentinoParaPesoChileno(double valorPesoArgentino) {
+	public String pesoArgentinoParaPesoChileno(double valorPesoArgentino) {
 		double resultado;
 		resultado = valorPesoArgentino * cotacaoPesoArgentino[5];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 	// peso chileno x peso argentino
 	
-	public double pesoChilenoParaPesoArgentino(double valorPesoChileno) {
+	public String pesoChilenoParaPesoArgentino(double valorPesoChileno) {
 		double resultado;
 		resultado = valorPesoChileno * cotacaoPesoChileno[4];
 		
-		return resultado;
+		return formato.format(resultado);
 	}
 	
 }

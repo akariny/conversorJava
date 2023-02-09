@@ -133,33 +133,33 @@ public class ConversorDeMoedas extends JFrame {
 					}
 					
 					if(combo1 == 1 && combo2 == 2) {
-						String resultado = Double.toString(converterMoeda.reaisParaDolar(moedaRecebidaDouble));
+						String resultado = converterMoeda.reaisParaDolar(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 1 && combo2 == 3) {
-						String resultado = Double.toString(converterMoeda.reaisParaEuro(moedaRecebidaDouble));
+						String resultado = converterMoeda.reaisParaEuro(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 1 && combo2 == 4) {
-						String resultado = Double.toString(converterMoeda.reaisParaLibraEsterlina(moedaRecebidaDouble));
+						String resultado = converterMoeda.reaisParaLibraEsterlina(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 1 && combo2 == 5) {
-						String resultado = Double.toString(converterMoeda.reaisParaPesoArgentino(moedaRecebidaDouble));
+						String resultado = converterMoeda.reaisParaPesoArgentino(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 1 && combo2 == 6) {
-						String resultado = Double.toString(converterMoeda.reaisParaPesoChileno(moedaRecebidaDouble));
+						String resultado = converterMoeda.reaisParaPesoChileno(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					//dolar
 					if(combo1 == 2 && combo2 == 1) {
-						String resultado = Double.toString(converterMoeda.dolarParaReais(moedaRecebidaDouble));
+						String resultado = converterMoeda.dolarParaReais(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
@@ -168,33 +168,33 @@ public class ConversorDeMoedas extends JFrame {
 					}
 					
 					if(combo1 == 2 && combo2 == 3) {
-						String resultado = Double.toString(converterMoeda.dolarParaEuro(moedaRecebidaDouble));
+						String resultado = converterMoeda.dolarParaEuro(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 2 && combo2 == 4) {
-						String resultado = Double.toString(converterMoeda.dolarParaLibraEsterlina(moedaRecebidaDouble));
+						String resultado = converterMoeda.dolarParaLibraEsterlina(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 2 && combo2 == 5) {
-						String resultado = Double.toString(converterMoeda.dolarParaPesoArgentino(moedaRecebidaDouble));
+						String resultado = converterMoeda.dolarParaPesoArgentino(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 2 && combo2 == 6) {
-						String resultado = Double.toString(converterMoeda.dolarParaPesoChileno(moedaRecebidaDouble));
+						String resultado = converterMoeda.dolarParaPesoChileno(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					//euro
 					if(combo1 == 3 && combo2 == 1) {
-						String resultado = Double.toString(converterMoeda.euroParaReais(moedaRecebidaDouble));
+						String resultado = converterMoeda.euroParaReais(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 3 && combo2 == 2) {
-						String resultado = Double.toString(converterMoeda.euroParaDolar(moedaRecebidaDouble));
+						String resultado = converterMoeda.euroParaDolar(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
@@ -203,33 +203,33 @@ public class ConversorDeMoedas extends JFrame {
 					}
 					
 					if(combo1 == 3 && combo2 == 4) {
-						String resultado = Double.toString(converterMoeda.euroParaLibraEsterlina(moedaRecebidaDouble));
+						String resultado = converterMoeda.euroParaLibraEsterlina(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 3 && combo2 == 5) {
-						String resultado = Double.toString(converterMoeda.euroParaPesoArgentino(moedaRecebidaDouble));
+						String resultado = converterMoeda.euroParaPesoArgentino(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 3 && combo2 == 6) {
-						String resultado = Double.toString(converterMoeda.euroParaPesoChileno(moedaRecebidaDouble));
+						String resultado = converterMoeda.euroParaPesoChileno(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					//libra esterlina
 					if(combo1 == 4 && combo2 == 1) {
-						String resultado = Double.toString(converterMoeda.libraEsterlinaParaReais(moedaRecebidaDouble));
+						String resultado = converterMoeda.libraEsterlinaParaReais(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 4 && combo2 == 2) {
-						String resultado = Double.toString(converterMoeda.libraEsterlinaParaDolar(moedaRecebidaDouble));
+						String resultado = converterMoeda.libraEsterlinaParaDolar(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 4 && combo2 == 3) {
-						String resultado = Double.toString(converterMoeda.libraEsterlinaParaEuro(moedaRecebidaDouble));
+						String resultado = converterMoeda.libraEsterlinaParaEuro(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
@@ -238,33 +238,33 @@ public class ConversorDeMoedas extends JFrame {
 					}
 					
 					if(combo1 == 4 && combo2 == 5) {
-						String resultado = Double.toString(converterMoeda.libraEsterlinaParaPesoArgentino(moedaRecebidaDouble));
+						String resultado = converterMoeda.libraEsterlinaParaPesoArgentino(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 4 && combo2 == 6) {
-						String resultado = Double.toString(converterMoeda.libraEsterlinaParaPesoChileno(moedaRecebidaDouble));
+						String resultado = converterMoeda.libraEsterlinaParaPesoChileno(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					//peso argentino
 					if(combo1 == 5 && combo2 == 1) {
-						String resultado = Double.toString(converterMoeda.pesoArgentinoParaReais(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoArgentinoParaReais(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 5 && combo2 == 2) {
-						String resultado = Double.toString(converterMoeda.pesoArgentinoParaDolar(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoArgentinoParaDolar(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 5 && combo2 == 3) {
-						String resultado = Double.toString(converterMoeda.pesoArgentinoParaEuro(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoArgentinoParaEuro(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 5 && combo2 == 4) {
-						String resultado = Double.toString(converterMoeda.pesoArgentinoParaLibraEsterlina(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoArgentinoParaLibraEsterlina(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
@@ -273,33 +273,33 @@ public class ConversorDeMoedas extends JFrame {
 					}
 					
 					if(combo1 == 5 && combo2 == 6) {
-						String resultado = Double.toString(converterMoeda.pesoArgentinoParaPesoChileno(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoArgentinoParaPesoChileno(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					//peso chileno
 					if(combo1 == 6 && combo2 == 1) {
-						String resultado = Double.toString(converterMoeda.pesoChilenoParaReais(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoChilenoParaReais(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 6 && combo2 == 2) {
-						String resultado = Double.toString(converterMoeda.pesoChilenoParaDolar(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoChilenoParaDolar(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 6 && combo2 == 3) {
-						String resultado = Double.toString(converterMoeda.pesoChilenoParaEuro(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoChilenoParaEuro(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 6 && combo2 == 4) {
-						String resultado = Double.toString(converterMoeda.pesoChilenoParaLibraEsterlina(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoChilenoParaLibraEsterlina(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
 					if(combo1 == 6 && combo2 == 5) {
-						String resultado = Double.toString(converterMoeda.pesoChilenoParaPesoArgentino(moedaRecebidaDouble));
+						String resultado = converterMoeda.pesoChilenoParaPesoArgentino(moedaRecebidaDouble);
 						txtMoedaConvertida.setText(resultado);
 					}
 					
